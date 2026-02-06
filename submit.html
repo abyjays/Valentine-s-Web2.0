@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Project Submission</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="submit.css">
+  <link rel="icon" type="image/x-icon" href="assets/WhatsApp Image 2026-02-01 at 17.04.31.jpeg">
+</head>
+
+<body>
+
+<section>
+  <!-- Background Video -->
+  <video id="bgVideo" autoplay muted loop playsinline>
+    <source src="assets/138639-770315609_medium.mp4" type="video/mp4">
+  </video>
+
+  <!-- Form Card -->
+  <div class="signin">
+    <div class="content">
+      <h2>Project Submission</h2>
+
+      <form class="form" id="submitForm">
+        <div class="inputBox">
+          <input type="text" name="name" required>
+          <i>Full Name</i>
+        </div>
+
+        <div class="inputBox">
+          <input type="text" name="department" required>
+          <i>Department</i>
+        </div>
+
+        <div class="inputBox">
+          <input type="text" name="semester" required>
+          <i>Semester</i>
+        </div>
+
+        <div class="inputBox">
+          <input type="tel" name="phone" required>
+          <i>Phone Number</i>
+        </div>
+
+        <div class="inputBox">
+          <input type="url" name="projectLink" required>
+          <i>Project Link (GitHub / Drive)</i>
+        </div>
+
+        <div class="inputBox">
+          <input type="submit" value="Submit Project">
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- Loading Overlay -->
+<div id="loadingOverlay" class="loading-overlay hidden">
+  <div class="loader-box">
+    <div class="spinner"></div>
+    <p id="loadingText">Submitting your project…</p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
