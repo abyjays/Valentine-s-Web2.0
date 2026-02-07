@@ -1,7 +1,7 @@
 const form = document.getElementById("regForm");
 const msg = document.getElementById("msg");
 
-/* Create themed loading screen dynamically */
+/* Loader */
 const overlay = document.createElement("div");
 overlay.id = "themeLoader";
 overlay.innerHTML = `
@@ -15,12 +15,10 @@ document.body.appendChild(overlay);
 form.addEventListener("submit", function (e) {
   e.preventDefault();
 
-  // Show themed loading screen
   overlay.classList.add("active");
   msg.textContent = "";
   msg.className = "";
 
-  // Send data to Google Apps Script
   fetch(
     "https://script.google.com/macros/s/AKfycbydYTbU970-FgRCGphbSgJsaUPhWjwBVHjxDf6A1HesLxWUl00zIawfxHgfoEKiXIaqMw/exec",
     {
@@ -30,11 +28,10 @@ form.addEventListener("submit", function (e) {
     }
   );
 
-  // Hide loader and show success
   setTimeout(() => {
     overlay.classList.remove("active");
     msg.textContent = "✅ Registration Submitted!";
     msg.classList.add("success");
     form.reset();
-  }, 1600);
+  }, 1500);
 });
