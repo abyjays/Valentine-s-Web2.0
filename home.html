@@ -1,62 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Valentine Webpage Competition</title>
-<link rel="icon" type="image/x-icon" href="assets/WhatsApp Image 2026-02-01 at 17.04.31.jpeg">
-<link rel="stylesheet" href="style.css">
-</head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Valentine Webpage Competition</title>
 
+  <link rel="icon" type="image/x-icon" href="assets/WhatsApp Image 2026-02-01 at 17.04.31.jpeg">
+  <link rel="stylesheet" href="CSS/home.css">
+</head>
 
 <body>
 
-<video autoplay muted loop playsinline id="bg-video">
+<!-- Background Video -->
+<video autoplay muted loop playsinline class="bg-video">
   <source src="assets/138639-770315609_medium.mp4" type="video/mp4">
-  Your browser does not support HTML5 video.
 </video>
 
-<!-- Dark overlay for readability -->
-<div class="video-overlay"></div>
+<!-- Overlay -->
+<div class="overlay"></div>
 
 <div class="content">
-  <section id="home" class="hero">
+
+  <!-- HERO -->
+  <section class="hero">
     <p>
       Showcase your creativity, coding skills, and design sense.
       Build a beautiful webpage using only HTML, CSS, and JavaScript.
     </p>
 
     <div class="notice">
-      ⚠️ This program will be conducted only if more than <b>5 participants</b> register.
+      ⚠️ This program will be conducted only if more than
+      <b>5 participants</b> register.
     </div>
 
-    <a href="register.html" class="main-btn">Register</a>
-    <a href="submit.html" class="main-btn">Project Submit</a>
+    <div class="btn-group">
+      <a href="register.html" class="main-btn">Register</a>
+      <a href="submit.html" class="main-btn">Project Submit</a>
+    </div>
   </section>
 
+  <!-- TIMER -->
   <section class="timer-section">
     <h2 class="heading">Competition Countdown</h2>
 
     <div id="countdown">
-      <div><span id="days">0</span>Days</div>
-      <div><span id="hours">0</span>Hours</div>
-      <div><span id="minutes">0</span>Minutes</div>
-      <div><span id="seconds">0</span>Seconds</div>
+      <div><span id="days">0</span><small>Days</small></div>
+      <div><span id="hours">0</span><small>Hours</small></div>
+      <div><span id="minutes">0</span><small>Minutes</small></div>
+      <div><span id="seconds">0</span><small>Seconds</small></div>
     </div>
 
     <p class="time-note">
-      📅 On <b>13 Feb, 11:15 AM</b> Venue <b> Lab 1</b><br><br><b>...See you there...</b>
+      📅 On <b>13 Feb, 11:15 AM</b><br>
+      Venue <b>Lab 1</b><br><br>
+      <b>...See you there...</b>
     </p>
   </section>
-</div>
 
+</div>
 
 <script src="main.js"></script>
 </body>
 </html>
-
-
-
-
-
-
